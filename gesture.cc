@@ -141,3 +141,5 @@ RStroke Stroke::trefoil() {
 	}
 	return Stroke::create(s, 0, 0, AnyModifier, false);
 }
+
+template void Stroke::save(boost::archive::text_oarchive & ar, const unsigned int version) const;
